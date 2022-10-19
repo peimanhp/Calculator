@@ -1,15 +1,5 @@
-@font-face {
-  font-family: roboto;
-  src: url(../resources/roboto-regular-webfont.woff2);
-}
-
-@font-face {
-  font-family: roboto-bold;
-  src: url(../resources/roboto-bold-webfont.woff2);
-}
-
 * {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: arial,sans-serif;;
   font-size: 18px;
   text-decoration: none;
   box-sizing: border-box;
@@ -20,11 +10,12 @@
 html,
 body {
   margin: 0;
-  height: 100%;
+  height: 100%;  
 }
 
 .calc {
-  max-width: 300px;
+  max-width: 300px;  
+  background-color: white;
 }
 
 .numbers{
@@ -35,17 +26,31 @@ body {
   background-color: #DADCE0;
 }
 
-.numbers:hover {
-  border: 2px solid gray;
-  
+.numbers:hover,
+.operatores:hover {
+  border: 1px solid gray;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
 button {
+  border: 1px solid transparent;
   margin: 6px 3px;
 }
 
-#display {
-  border: 1px solid gray;
+#display {  
+  border: 1px solid #0D6EFD;  
+  font-size: 1.3em;
+  margin: 0 3px;
+}
+
+.equals{
+  color: white;
+  background-color: #0D6EFD;
+  font-weight: 550;
+}
+
+.equals:hover{
+  background-color: #0B5ED7;
 }
 
 
