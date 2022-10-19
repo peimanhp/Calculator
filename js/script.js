@@ -24,9 +24,22 @@ C.onclick = () => {
 };
 
 percent.onclick = () => {
-    display.value = display.value / 100;
-}
+  display.value = display.value / 100;
+};
 
 equals.onclick = () => {
-  display.value = eval(display.value);
+  let displayValue = display.value.split("");
+
+  let indexOfX = displayValue.indexOf("x");
+  if (indexOfX !== -1) {
+    displayValue[indexOfX] = "*";
+  }
+
+  let indexOfDivision = displayValue.indexOf("÷");
+  if (indexOfDivision !== -1) {
+    displayValue[indexOfDivision] = "/";
+  }
+
+  let newValue = displayValue.join("");
+  display.value = eval(newValue);
 };
