@@ -40,17 +40,32 @@ body {
   background-color: var(--nums-color);
 }
 
-.operatores {
+.operators {
   color: var(--nums-text-color);
   background-color: var(--oprators-color);
   font-weight: 550;
 }
 
 .numbers:hover,
-.operatores:hover {
+.operators:hover {
   border: 1px solid;
   border-color: var(--op-border-color);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  transition: .05s;
+}
+
+.numbers.keyhover {
+  border: 1px solid;
+  border-color: var(--op-border-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  transition: .05s;
+}
+
+.operators.keyhover {
+  border: 1px solid;
+  border-color: var(--op-border-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  transition: .05s;
 }
 
 button {
@@ -62,7 +77,11 @@ button {
   border: 1px solid;
   border-color: var(--dis-border-color);
   font-size: 1.3em;
-  margin: 0 3px;
+  margin: 0 3px;  ;
+}
+
+#dot {
+  font-weight: bolder;
 }
 
 .equals {
@@ -72,6 +91,10 @@ button {
 }
 
 .equals:hover {
+  background-color: var(--equBtnHover-color);
+}
+
+.equals.keyhover {
   background-color: var(--equBtnHover-color);
 }
 
