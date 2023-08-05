@@ -1,3 +1,5 @@
+Calculator app
+
 Live Demo: https://peimanhp.github.io/Calculator/
 
 This is a simple calculator application developed using vanilla JavaScript. It features a sleek and intuitive user interface with a dark theme switch for enhanced visibility. The app supports keyboard input, allowing you to perform calculations conveniently without the need for mouse interaction.
